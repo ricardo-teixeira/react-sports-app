@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.topics {
+  margin-bottom: 50px;
+
+  .topic-title {
+    color: $color-primary;
+    font-weight: 300;
+    font-size: 1.825rem;
+    margin: 0 0px 15px;
+  }
+
+  .topic-icon {
+    color: lighten($color-primary, 4%);
+    font-size: $banner-icon-size;
+    margin-right: 10px;
+  }
+
+  .topic-description {
+    padding: 0 10px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.breadcrumb {
+  background-color: $color-light-gray;
+  padding: 12px 0;
+
+  .crumb.current {
+    color: #000;
+    pointer-events: none;
+  }
+
+  .separator {
+    color: $color-medium-gray;
+    margin: 0 15px;
+  }
+}

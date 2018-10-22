@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+@import "../../styles/animations";
+
+.users-listing.table {
+  min-width: 1300px;
+
+  .icon-remove {
+    color: $color-primary;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      color: lighten($color-primary, 5%);
+    }
+  }
+
+  .icon-loading {
+    animation: rotation 2s infinite linear;
+  }
+
+  tr:hover {
+    .icon-remove {
+      opacity: 1;
+      pointer-events: initial;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.flex-grid {
+  display: flex;
+
+  &.flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .col {
+    flex: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (max-width: 400px) {
+    display: block;
+  }
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}

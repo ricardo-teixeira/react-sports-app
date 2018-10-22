@@ -1,0 +1,31 @@
+@import "./variables";
+
+@mixin button($background, $color: inherit) {
+  color: $color;
+  background-color: $background;
+
+  &:focus,
+  &:active {
+    background-color: darken($background, 10%);
+  }
+}
+
+.btn {
+  padding: 10px 18px;
+  color: inherit;
+  border: 0;
+  border-radius: $default-border-radius;
+  margin-right: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.btn-default {
+    @include button(#ccc);
+  }
+
+  &.btn-primary {
+    @include button($color-primary, #fff);
+  }
+}

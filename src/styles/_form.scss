@@ -1,0 +1,19 @@
+@import "./variables";
+
+.form-input {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 8px;
+  border-radius: $default-border-radius;
+  width: 100%;
+  display: block;
+
+  &:focus {
+    border: 1px solid $color-primary;
+    outline: none;
+  }
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
